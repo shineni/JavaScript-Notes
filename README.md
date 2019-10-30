@@ -1,5 +1,5 @@
 # JavaScript-Notes
-## 变量提升
+## 1. 变量提升
 ### 变量的声明和赋值
 var myname = 'shine ni'
 > 可以看成有声明和赋值两部分组成
