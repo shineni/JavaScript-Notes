@@ -135,6 +135,21 @@ function runStack (n) {
 }
 runStack(50000)
  ```
+ > 尾递归：就是一个函数执行的最后一步是将另外一个函数调用并返回。[Link]https://juejin.im/entry/592e8a2d0ce463006b510b34
+ ```
+   // 尾调用正确示范1.0
+  function f(x){
+    return g(x);
+  }
+
+  // 尾调用正确示范2.0
+  function f(x) {
+    if (x > 0) {
+      return m(x)
+    }
+    return n(x);
+  }
+ ```
 ```
 /**
  * 优化思路：调用栈中只保留一个调用记录，就是让上一个函数不需要有啥保留的内容
